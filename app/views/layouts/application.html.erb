@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Message me</title>
+    <%= favicon_link_tag %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+  </head>
+
+  <body>
+  <div class="ui small inverted menu">
+  <div class="ui container">
+  <%= render 'layouts/navigation' %>
+</div>
+</div>
+<div class="ui container">
+    <%= render 'layouts/messages' %>
+    <%= yield %>
+</div>
+  </body>
+</html>
