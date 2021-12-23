@@ -1,5 +1,6 @@
 {
   "name": "chatapp",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@doabit/semantic-ui-sass": "^2.4.5",
